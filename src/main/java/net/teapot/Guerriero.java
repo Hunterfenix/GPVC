@@ -12,14 +12,16 @@ public class Guerriero extends Personaggio{
     }
 
     // Special ability
-    public void callToWar(int physicalDefense,int physicalAttack) {
+    public void callToWar(int physicalDefenseBoost,int physicalAttackBoost) {
         standardPhysicalAttack = getPhysicalAttack();
         standardPhysicalDefense = getPhysicalDefense();
-        setPhysicalDefense(physicalDefense);
-        setPhysicalAttack(physicalAttack);
+        setPhysicalDefense(physicalDefenseBoost);
+        setPhysicalAttack(physicalAttackBoost);
     }
     public void endCallToWar() {
+
         setPhysicalAttack(standardPhysicalAttack);
         setPhysicalDefense(standardPhysicalDefense);
     }
+
 }

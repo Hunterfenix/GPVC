@@ -13,9 +13,11 @@ public class Mago extends Personaggio{
     // Special ability
 
     public void magicWand(int magicAttack) {
+        standardMagicAttack = getMagicAttack();
+        setMagicAttack(500);
 
     }
     public void endMagicWand() {
-
+        setMagicAttack(standardMagicAttack);
     }
 }
